@@ -1,104 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog do Aluno C</title>
-    <!-- Vincula o arquivo CSS externo -->
+    <title>Meu Blog & Feedback</title>
+    <!-- Vinculação com o arquivo CSS separado -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- CABEÇALHO -->
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <h1>Blog do <span>Aluno C</span></h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Estudos</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!-- Cabeçalho do Blog -->
+    <header class="blog-header">
+        <h1>Meu Blog Pessoal</h1>
+        <p>Compartilhando ideias e recebendo sua opinião</p>
     </header>
 
-    <!-- BANNER -->
-    <section class="hero">
-        <h2>Bem-vindo à minha jornada de aprendizado</h2>
-        <p>Compartilhando resumos, dicas de programação, rotina de estudos e desafios da vida acadêmica.</p>
-    </section>
-
-    <!-- CONTEÚDO PRINCIPAL -->
-    <div class="container">
+    <!-- Conteúdo Principal -->
+    <main class="container">
         
-        <!-- POSTS -->
-        <main class="main-content">
-            
+        <!-- Seção das Postagens -->
+        <section class="posts-section">
             <article class="post">
-                <div class="post-meta">Postado em 28 de Julho de 2026 | Por Aluno C</div>
-                <h3 class="post-title">Como organizei minha rotina de estudos com o Método Pomodoro</h3>
-                <p class="post-text">Manter o foco durante as aulas online e revisões sempre foi um desafio. Neste post, conto como a técnica de blocos de tempo mudou minha produtividade e me ajudou a fixar melhor as matérias do semestre...</p>
-                <a href="#" class="read-more">Ler mais</a>
+                <h2>Minha Primeira Postagem</h2>
+                <span class="post-date">Postado hoje</span>
+                <p>Seja muito bem-vindo ao meu novo blog! Este é um espaço simples criado para compartilhar pensamentos, artigos e projetos. O layout foi desenvolvido de forma limpa para garantir uma leitura agradável.</p>
             </article>
 
             <article class="post">
-                <div class="post-meta">Postado em 15 de Julho de 2026 | Por Aluno C</div>
-                <h3 class="post-title">Meus comandos favoritos do Git e GitHub</h3>
-                <p class="post-text">Se você está começando na programação, o controle de versão pode parecer assustador. Separei uma lista com os comandos que eu mais utilizo no dia a dia para salvar meus códigos com segurança.</p>
-                <a href="#" class="read-more">Ler mais</a>
+                <h2>Por que sua opinião importa?</h2>
+                <span class="post-date">Postado ontem</span>
+                <p>Criar conteúdo na internet só faz sentido quando temos a resposta de quem lê. Use o formulário ao lado (ou abaixo no celular) para deixar seu e-mail e me dizer o que está achando da página!</p>
             </article>
+        </section>
 
-            <article class="post">
-                <div class="post-meta">Postado em 02 de Julho de 2026 | Por Aluno C</div>
-                <h3 class="post-title">Dicas para criar o seu primeiro site usando apenas HTML e CSS</h3>
-                <p class="post-text">Aprender a estruturar uma página e aplicar estilos é a base de todo desenvolvedor web. Entenda o papel das tags principais e como as propriedades CSS dão vida ao layout.</p>
-                <a href="#" class="read-more">Ler mais</a>
-            </article>
+        <!-- Barra Lateral com o Formulário de Feedback -->
+        <aside class="feedback-sidebar">
+            <div class="feedback-card">
+                <h3>O que está achando?</h3>
+                <p>Deixe sua opinião para que eu possa melhorar o site.</p>
+                
+                <!-- IMPORTANTE: Substitua 'seu-id-aqui' pelo ID do Formspree para receber e-mails reais -->
+                <form action="https://formspree.io" method="POST" id="feedback-form">
+                    
+                    <div class="form-group">
+                        <label for="email">Seu E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+                    </div>
 
-        </main>
+                    <div class="form-group">
+                        <label for="message">Sua Mensagem/Opinião:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Diga o que achou do site..." required></textarea>
+                    </div>
 
-        <!-- BARRA LATERAL -->
-        <sidebar>
-            
-            <div class="sidebar-box about-me">
-                <h3>Sobre Mim</h3>
-                <img src="https://unsplash.com" alt="Foto do Aluno C">
-                <p>Olá! Sou o Aluno C, estudante apaixonado por tecnologia e desenvolvimento web. Criei este espaço para registrar minha evolução.</p>
+                    <button type="submit" class="btn-submit">Enviar Feedback</button>
+                </form>
             </div>
+        </aside>
 
-            <div class="sidebar-box categories">
-                <h3>Categorias</h3>
-                <ul>
-                    <li><a href="#">Dicas de Estudo</a></li>
-                    <li><a href="#">HTML & CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">Rotina Acadêmica</a></li>
-                </ul>
-            </div>
+    </main>
 
-        </sidebar>
-
-    </div>
-
-    <!-- RODAPÉ -->
-    <footer>
-        <p>&copy; 2026 Blog do Aluno C. Desenvolvido com foco e determinação.</p>
+    <!-- Rodapé -->
+    <footer class="blog-footer">
+        <p>&copy; 2026 Meu Blog. Todos os direitos reservados.</p>
     </footer>
-
-</body>
-</html>
 
 </body>
 </html>
