@@ -39,8 +39,21 @@
                 <h3>O que está achando?</h3>
                 <p>Deixe sua opinião para que eu possa melhorar o site.</p>
                 
-                <!-- IMPORTANTE: Substitua 'seu-id-aqui' pelo ID do Formspree para receber e-mails reais -->
-                <form action="https://formspree.io" method="POST" id="feedback-form">
+               <form
+  action="https://formspree.io/f/xdaqvarb"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
                     
                     <div class="form-group">
                         <label for="email">Seu E-mail:</label>
@@ -64,19 +77,6 @@
         <p>&copy; 2026 Meu Blog. Todos os direitos reservados.</p>
     </footer>
 
-
-    <form
-  action="https://formspree.io/f/xdaqvarb"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
   <!-- your other form fields go here -->
   <button type="submit">Send</button>
 </form>
